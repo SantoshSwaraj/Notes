@@ -13,7 +13,7 @@ GIT Commands:
 	$ clear
 
 5. To view a particular setting (Let say email) :
-	$ git config user.emal
+	$ git config user.email
 
 6. To view the list of git commands :
     $ git help
