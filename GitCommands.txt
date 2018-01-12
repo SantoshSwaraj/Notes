@@ -1,0 +1,111 @@
+GIT Commands: 
+
+1. To Set your git account username : 
+	$ git config --global user.name "<username>" 
+	
+2. To Set your git account email_id	
+	$ git config --global user.email "<user_email>"
+
+3. To display the list of configurations : 	
+	$ git config --list
+	
+4. To clear the the screen :
+	$ clear
+
+5. To view a particular setting (Let say email) :
+	$ git config user.emal
+
+6. To view the list of git commands :
+    $ git help
+	$ git help <command_name>
+	
+7. Some Basic Linux Commands to used :
+	7.1: To get current working directory :
+		$ pwd
+	7.2: To go root directory :
+	    $ cd ~
+	7.3 : To view the list of directory & files
+		$ ls
+		
+8. To initialize your working directory as git repository 
+		$ git init
+
+	
+9. To add the working directory(local repository)
+		$ git add . // . is for all files in folder
+		$ git add abc.txt // adds abc.txt 
+		
+10. To commit the working directory 
+		$ git commit -m "Coments"
+
+11. To view the log history of commits
+		$ git log
+
+12. To view the log history of commits by a particular user
+		$ git log --author="Santosh"
+		
+13. To check the status of the working directory
+		$ git status
+	
+14. Git file movement
+	working copy >> staging area >> repository
+	
+15. To view the differences between your working copy and your main repository
+		$ git diff
+		
+		<!--The RED text is in your main repository-->
+		<!--The GREEN text is what changes your made in working directory-->
+		
+16. To view the differences between Staging area & Repository
+		$ git diff --staged
+		
+17. To remove the file from your repository as well as working directory
+		$ git rm filename.txt
+		$ git commit -m  "this is the point in time we have commited"
+
+18. To rename a file 
+		$ git mv first.txt second.txt // the name of the file changes from first to second
+		$ git mv first.txt foldername/second.txt  // the name of the file changed and moved in the other folder
+		
+		
+19. To take files from repository and make it working copy
+		$ git checkout --<filename>
+
+20. To remove file from staging area back to working copy
+		$ git reset HEAD <filename>
+		
+21. To Get older version from repository
+		version1 >> version2 >> version3>> version2
+		
+		Step 1: Take the log history of all the commits 
+				$ git log
+					commit : ead111o123445555ldflfdkee (logno)
+					Author : Santosh
+					Date : xkkdddd
+					
+		Step 2: Take the file of selected commit
+				$ git checkout ead111o -- <filename>
+				
+		Step 3 : Commit the older version to repository
+				$ git commit -am "the older version commited at HEAD"
+		
+
+22. Connecting your git bash to github url
+		$ git remote add <nicknameofurl> yourgithub url
+		ex : git remoter add gitrepo https://github.com/Santosh/toutorilas.git
+		
+23. Pushing your project to your github server
+		$ git push -u gitrepo master
+		
+24. Github GUI version 
+	Download from https://desktop.github.com
+
+25. To download project from your github to localcomputer
+	use clone option
+
+26. To ignore any file at your project to get track by git 
+	Step1 : Create a file .gitignore at your project
+	Step2 : Mention the filename at this file which your want to ignore by git to be tracked
+	
+	
+	
